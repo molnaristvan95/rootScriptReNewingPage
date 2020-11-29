@@ -21,12 +21,13 @@ function abort() {
 }
 
 function openNewWindow(url) {
-  window.open(url, '_blank', false);
+  window.open(url, '_blank');
   return false;
 }
 
 function closePage() {
-  return window.close();
+  //return window.close();
+  document.body.innerHTML = 'A munkamenet lejárt.';
 }
 
 //reOpenWin(10, 'file:///D:/Slack/local.html'); ←Local PATH from PC folder
