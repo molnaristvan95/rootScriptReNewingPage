@@ -21,14 +21,12 @@ function abort() {
 }
 
 function openNewWindow(url) {
-  window.open(url, '_blank', "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400", false);
+  window.open(url, '_blank', false);
   return false;
 }
 
 function closePage() {
   return window.close();
-  /*window.location.href = '/closekiosk';
-  return;*/
 }
 
 //reOpenWin(10, 'file:///D:/Slack/local.html'); ←Local PATH from PC folder
