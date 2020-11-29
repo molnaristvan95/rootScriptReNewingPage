@@ -28,6 +28,7 @@ function closePage() {
   document.body.innerHTML = 'A munkamenet lejárt.';
   document.body.style.background = 'black';
   document.body.style.color = 'yellow';
+  document.body.style.fontSize = '32px';
   return this.window.close();
 }
 
