@@ -25,9 +25,8 @@ function openNewWindow(url) {
 }
 
 function closePage() {
-  //return window.close();
   document.body.innerHTML = 'A munkamenet lejárt.';
-  return;
+  return this.window.close();
 }
 
 //reOpenWin(10, 'file:///D:/Slack/local.html'); ←Local PATH from PC folder
