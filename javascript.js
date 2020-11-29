@@ -26,9 +26,9 @@ function openNewWindow(url) {
 }
 
 function closePage() {
-  //return window.close();
-  window.location.href = '/closekiosk';
-  return;
+  return window.close();
+  /*window.location.href = '/closekiosk';
+  return;*/
 }
 
 //reOpenWin(10, 'file:///D:/Slack/local.html'); ←Local PATH from PC folder
