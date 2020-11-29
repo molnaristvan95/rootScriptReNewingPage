@@ -7,7 +7,7 @@ function reOpenWin(time, path) {
   if (way === path) {
     window.setTimeout(abort, (faster * 1000));
     window.setTimeout(function(){
-      openNewWindow(path), (time * 3000)
+      openNewWindow(path), (time * 1000)
     });
     window.setTimeout(closePage, (slower * 1000));
   } else {
@@ -26,6 +26,8 @@ function openNewWindow(url) {
 
 function closePage() {
   document.body.innerHTML = 'A munkamenet lejárt.';
+  document.body.style.background = 'black';
+  document.body.style.color = 'yellow';
   return this.window.close();
 }
 
