@@ -6,7 +6,9 @@ function reOpenWin(time, path) {
       slower = time + 2;
   if (way === path) {
     window.setTimeout(abort, (faster * 1000));
-    window.setTimeout(openNewWindow(path), (time * 1000));
+    window.setTimeout(function(){
+      openNewWindow(path), (time * 3000)
+    });
     window.setTimeout(closePage, (slower * 1000));
   } else {
     console.error('%cErre az oldalra nem terjed ki a script.','color:yellow; font-size:24px;');
