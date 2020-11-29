@@ -29,6 +29,16 @@ function closePage() {
   document.body.style.background = 'black';
   document.body.style.color = 'yellow';
   document.body.style.fontSize = '32px';
+  document.body.style.display = 'flex';
+  document.body.style.alignItems = 'center';
+  document.body.style.justifyContent = 'center';
+  document.body.style.height = '95vh';
+  document.body.addEventListener('mousemove', halt);
+  document.body.addEventListener('click', halt);
+  return window.close();
+}
+
+function halt() {
   return window.close();
 }
 
