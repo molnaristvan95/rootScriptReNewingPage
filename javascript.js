@@ -29,7 +29,7 @@ function closePage() {
   document.body.style.background = 'black';
   document.body.style.color = 'yellow';
   document.body.style.fontSize = '32px';
-  return this.window.close();
+  return window.close();
 }
 
 //reOpenWin(10, 'file:///D:/Slack/local.html'); ←Local PATH from PC folder
