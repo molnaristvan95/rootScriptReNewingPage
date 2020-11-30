@@ -26,10 +26,6 @@ function reOpenWin(time, path) {
       document.body.style.justifyContent = 'center';
       document.body.style.height = '95vh';
     }, (slower * 1000));
-    
-    window.setTimeout(function(){
-      window.location.href = '/closekiosk';
-    }, ((time + 30) * 1000));
   } else {
     console.error('%cErre az oldalra nem terjed ki a script.','color:yellow; font-size:24px;');
   }
