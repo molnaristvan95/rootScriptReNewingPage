@@ -3,7 +3,8 @@ console.clear();
 function reOpenWin(time, path) {
   var way = window.location.href,
       faster = time - 1,
-      slower = time + 1;
+      slower = time + 1,
+      moreSlower = time - 2;
   if (way === path) {
     window.setTimeout(function() {
       document.title = 'Lejárt oldal !!';
@@ -11,9 +12,9 @@ function reOpenWin(time, path) {
     
     window.setTimeout(function() {
       var copied = window.open(path, '_blank');
-      window.setTimeout(function(){
-        copied.window.close();
-      }, (time * 1000));
+      window.setTimeout(function() {
+        return copied.window.close();
+      }, (moreSlower * 1000));
     }, (time * 1000));
     
     window.setTimeout(function() {
